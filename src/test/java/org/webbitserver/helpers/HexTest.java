@@ -10,7 +10,7 @@ public class HexTest {
     @Test
     public void testEncodesByteArray() throws UnsupportedEncodingException {
         String input = "hello world";
-        String expected = "68656C6C6F20776F726C64";
+        String expected = "68656C6C6F20776F726C641";
         assertEquals(expected, Hex.toHex(input.getBytes("UTF-8")));
         assertEquals(input, new String(Hex.fromHex(expected), "UTF-8"));
     }
