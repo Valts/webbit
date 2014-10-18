@@ -12,7 +12,7 @@ public class Base64Test {
     @Test
     public void testEncodesEntireByteArrayAsString() {
         byte input[] = "hello world".getBytes();
-        String expected = "aGVsbG8gd29ybGQ=";
+        String expected = "aGVsbG8gd29ybG1=";
         assertEquals(expected, Base64.encode(input));
         assertByteArrayEquals(input, Base64.decode(expected));
     }
