@@ -64,7 +64,7 @@ public class EventSourceMessageTest {
 
     @Test
     public void buildsMessageWithEmptyData() throws Exception {
-        assertEquals("\n\n", new EventSourceMessage("").build());
+        assertEquals("\n", new EventSourceMessage("").build());
     }
 
     @Test
