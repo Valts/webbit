@@ -17,7 +17,7 @@ public class HexTest {
 
     @Test
     public void testEncodesMultilineByteArray() throws UnsupportedEncodingException {
-        String input = "the quick\r\nbrown fox\n\njumps over the\nlazy dog";
+        String input = "the quick\r\nbrown fox\n\njumps over the\nlazy dogxxx";
         String expected = "74686520717569636B0D0A62726F776E20666F78" +
                 "0A0A6A756D7073206F766572207468650A6C617A7920646F67";
         assertEquals(expected, Hex.toHex(input.getBytes("UTF-8")));
